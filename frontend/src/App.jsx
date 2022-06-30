@@ -5,9 +5,12 @@ import Dashboard from './pages/Dashboard'
 import {ModalProvider} from './Modal/ModalContext/ModalContext'
 import { useSelector } from 'react-redux'
 import AppBar from './components/AppBar'
+import MainPage from './pages/MainPage'
+import CreateProfile from './components/CreateProfile/CreateProfile'
 function App() {
   const { user } = useSelector((state) => state.auth)
   return (
+
     <Router>
       <ModalProvider>
           {user && <AppBar/>}

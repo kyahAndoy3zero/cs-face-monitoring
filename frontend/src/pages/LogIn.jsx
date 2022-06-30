@@ -67,7 +67,7 @@ const LogIn = () => {
               <div className="max-w-md p-6 bg-white border border-gray-200 rounded-lg shadow-md sm:p-8 lg:p-10 dark:bg-gray-800 dark:border-gray-700">
                     
                     <form onSubmit={onSubmit} className="space-y-6 ">
-                    <h3 className="text-xl font-medium text-gray-900 dark:text-white">Faculty Portal</h3>
+                    <h3 className="text-xl font-medium text-gray-900 dark:text-white">Clerk Portal</h3>
                    
                     <div>
                         <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email</label>

@@ -1,7 +1,7 @@
 const asyncHandler = require('express-async-handler')
 const personProfile = require('../models/profileModel')
-
-
+const faceapi = require('face-api.js')
+const canvas = require('canvas')
 
 const sharp = require('sharp')
 const base64 = require('node-base64-image')
@@ -12,7 +12,10 @@ const multer = require('multer')
 
 
 
+
 const createProfile = asyncHandler(async(req, res) => {
+
+ 
 
     const {firstName, lastName, img_desc, role, id_number} = req.body
     const userExist = await personProfile.findOne({id_number})

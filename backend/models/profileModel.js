@@ -16,7 +16,7 @@ const profileSchema = mongoose.Schema({
         required: [true, 'Please add a last name']
     },
     img_desc: {
-        type: String,
+        type: Object,
         required: true
     },
     role: {
